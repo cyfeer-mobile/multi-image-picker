@@ -36,6 +36,7 @@ android {
 
 dependencies {
     implementation 'androidx.exifinterface:exifinterface:1.3.1'
-    implementation 'io.github.sangcomz:fishbun:1.1.1'
+//    implementation 'io.github.sangcomz:fishbun:1.1.1'
     implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'io.github.cyfeer-mobile:fishbun:1.1.2'
 }

@@ -543,8 +543,7 @@ public class MultiImagePickerPlugin implements
         FishBunCreator fishBun = FishBun.with(MultiImagePickerPlugin.this.activity)
                 .setImageAdapter(new GlideAdapter())
                 .setMaxCount(maxImages)
-                .setCamera(enableCamera)
-                .setRequestCode(REQUEST_CODE_CHOOSE)
+                .hasCameraInPickerPage(enableCamera)
                 .setSelectedImages(selectedUris)
                 .exceptGif(true)
                 .setIsUseDetailView(useDetailsView.equals("true"))
@@ -601,7 +600,7 @@ public class MultiImagePickerPlugin implements
             fishBun.setAllViewTitle(allViewTitle);
         }
 
-        fishBun.startAlbum();
+        fishBun.startAlbumWithOnActivityResult(REQUEST_CODE_CHOOSE);
 
     }
 
